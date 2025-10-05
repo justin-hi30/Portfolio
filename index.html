@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>justin mena — Front-End Developer</title>
+  <meta name="description" content="Portfolio of justin mena — HTML & CSS front-end projects." />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">mena</h1>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Hi — I'm <strong>Justin Toffer R. Mena</strong></h2>
+          <p class="lead">A student and aspiring Front-End Web Developer who builds responsive websites with HTML & CSS.</p>
+          <p>
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+          </p>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+ 
+          <img src="images/profile.jpg" alt="Profile picture of mena" />
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects container" aria-labelledby="projects-heading">
+      <h3 id="projects-heading">Projects</h3>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h4>Personal Portfolio Website</h4>
+          <p>Designed and developed a responsive portfolio using <strong>HTML</strong> and <strong>CSS</strong>. Applied semantic HTML elements and mobile-first design principles. Showcased personal projects and coding skills.</p>
+          <p class="project-links">
+            <a href="https://github.com/yourusername/portfolio-website" target="_blank" rel="noopener">GitHub</a>
+            <span>•</span>
+            <a href="https://yourusername.github.io/portfolio-website/" target="_blank" rel="noopener">Live Demo</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h4>Landing Page (Practice Project)</h4>
+          <p>Built a modern landing page layout using CSS Grid and Flexbox. Implemented a clean UI with responsive sections for mobile devices.</p>
+          <p class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+          <span>.</span>
+        </article>
+
+
+      </div>
+    </section>
+
+    <section id="about" class="about container" aria-labelledby="about-heading">
+      <h3 id="about-heading">About</h3>
+      <p>I am an IT student who enjoys building web pages using semantic HTML and modern CSS techniques (Flexbox & Grid). I follow mobile-first and accessible design practices and I’m continuously learning more front-end tools and workflows.</p>
+      <ul class="skills">
+        <li>HTML5</li>
+        <li>CSS3 (Flexbox, Grid)</li>
+        <li>Responsive & Mobile-first Design</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact container" aria-labelledby="contact-heading">
+      <h3 id="contact-heading">Contact</h3>
+      <p>Want to see more or collaborate? Send me a message:</p>
+      <address>
+        <strong>Email:</strong> <a href="mailto:youremail@example.com">justinmena731@gamil.com</a><br>
+        <strong>Location:</strong> imus, cavite
+      </address>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> justin mena. Built with HTML & CSS.</p>
+    </div>
+  </footer>
+
+  <script>
+ 
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
